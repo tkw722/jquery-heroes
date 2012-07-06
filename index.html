@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="jQuery-Heroes : A small jquery plugin to highlight one or more elements on a page." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>jQuery-Heroes</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/tkw722/jquery-heroes">View on GitHub</a>
+
+          <h1 id="project_title">jQuery-Heroes</h1>
+          <h2 id="project_tagline">A small jquery plugin to highlight one or more elements on a page.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/tkw722/jquery-heroes/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/tkw722/jquery-heroes/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>To highlight a hero on the page just call heroes() on the selector for the hero.</p>
+
+<pre><code>$('.one-hero').heroes();
+</code></pre>
+
+<p>If that selector leads to multiple elements being highlighted jQuery Heroes will highlight each one separately.</p>
+
+<pre><code>$('.two-heroes').heroes();
+</code></pre>
+
+<p>You can also highlight the heroes from the result of two or more selectors.</p>
+
+<pre><code>$('.one-hero, .two-heroes').heroes();
+</code></pre>
+
+<p>Parameters (<strong>defaults in bold</strong>):</p>
+
+<ul>
+<li>overlayOpacity (<strong>0.3</strong>)</li>
+<li>overlayColor (<strong>'#333'</strong>)</li>
+<li>animateOverlay (<strong>true</strong>)</li>
+<li>animationSpeed (<strong>500</strong>)</li>
+<li>animationEasing (<strong>''</strong>)</li>
+<li>clickOverlayToClose (<strong>true</strong>)</li>
+<li>beforeShowHeroes</li>
+<li>afterShowHeroes</li>
+<li>beforeHideHeroes</li>
+<li>afterHideHeroes</li>
+</ul><p><strong><em>Please note that in order to have your heroes show up correctly they must have a background defined. Otherwise the overlay will simply show through.</em></strong></p>
+
+<h3>Questions? Problems? Please feel free to let me know!</h3>
+
+<hr><h2>License</h2>
+
+<p>Copyright (c) 2012, Tim Wagner</p>
+
+<p>All rights reserved.</p>
+
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+
+<p>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation 
+and/or other materials provided with the distribution.</p>
+
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">jQuery-Heroes maintained by <a href="https://github.com/tkw722">tkw722</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-33214051-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
