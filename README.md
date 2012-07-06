@@ -28,7 +28,17 @@ Parameters (**defaults in bold**):
 * beforeHideHeroes
 * afterHideHeroes
 
+#  
+
 __*Please note that in order to have your heroes show up correctly they must have a background defined. Otherwise the overlay will simply show through.*__
+
+#  
+
+### Questions? Problems? Please feel free to let me know!
+
+#  
+
+----
 
 License
 -------
