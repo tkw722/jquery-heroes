@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Heroes</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="jquery.heroes.js"></script>
+    </head>
+    <body>
+        <script>
+            $(function(){
+                $('.one-hero').heroes({
+                    clickOverlayToClose: false,
+                    afterShowHeroes: function() {
+                        $('#heroes-overlay').one('click', function(){
+                            $('.two-heroes').heroes({
+                                clickOverlayToClose: false,
+                                afterShowHeroes: function() {
+                                    $('#heroes-overlay').one('click', function(){
+                                        $('.one-hero, .two-heroes, .other-hero').heroes();
+                                    });
+                                }
+                            });
+                        });
+                    }
+                });
+            });
+        </script>
+        <style>
+            /* Just be careful, you need to make sure you have a background on your heroes. Otherwise the overlay will just show right through. */
+            .one-hero, .two-heroes, .other-hero {
+                background:white;
+            }
+        </style>
+        <h1>jQuery Heroes</h1>
+        <p>jQuery Heroes allows you to highlight the heroes on a page.</p>
+        <p class="one-hero">$('.one-hero') jQuery Heroes can highlight one hero at a time.</p>
+        <ul>
+            <li class="two-heroes">$('.two-heroes') It can also highlight</li>
+            <li class="two-heroes">$('.two-heroes') two heroes at a time.</li>
+        </ul>
+        <p class="other-hero">$('.one-hero, .two-heroes') You can also highlight the results of two or more selectors.</p>
+        <p>Don't sweat going from one set of highlighted heroes to another, jQuery Heroes will deal with it.</p>
+    </body>
+</html>
